@@ -1,0 +1,16 @@
+body,
+html {
+  margin: 0;
+  font-family: sans-serif;
+}
+
+img {
+  height: 250px;
+  width: 250px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+li {
+  list-style-type: none;
+}
