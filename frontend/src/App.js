@@ -36,11 +36,12 @@ function App() {
   const searchForDrink = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.get(`www.thecocktaildb.com/api/json/v1/1/search.php?s=${search}`);
+      const response = await axios.get(`https://www.thecocktaildb.com/api/json/v1/1/search.php?s=${search}`);
       setDrink(response.data.drinks[0]);
     } catch (err) {
       console.log(err);
     }
+    setSearch('');
   };
 
   return (
